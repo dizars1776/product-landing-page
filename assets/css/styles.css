@@ -20,12 +20,12 @@ header {
   cursor: default;
 }
 
-li a {
+li a.nav-link {
   color: inherit;
   text-decoration: none;
 }
 
-header .header-logo-img {
+header .header-img {
   width: 100%;
   height: 100%;
   max-width: 100px;
