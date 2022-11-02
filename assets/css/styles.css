@@ -1,3 +1,8 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+@import url('https://fonts.googleapis.com/css?family=Anton:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400');
+
 /* RESET RULES */
 *, ::before, ::after, img {
   margin: 0;
@@ -13,10 +18,41 @@ html {
 .main-wrapper {
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
-  grid-template-rows: 5rem auto 1fr 1fr 5rem;
+  grid-template-rows: 5rem 1fr 5rem;
 }
 
 /* GRID STYLING && GLOBAL RULES */
+body {
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5 {
+  /* margin: 3rem 0 1.38rem; */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 2.488rem;
+}
+
+h2 {font-size: 2.074rem;}
+
+h3 {font-size: 1.728rem;}
+
+h4 {font-size: 1.44rem;}
+
+h5 {font-size: 1.2rem;}
+
+small, .text_small {font-size: 0.833rem;}
+
 header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -24,25 +60,15 @@ header {
   cursor: default;
 }
 
-.call-to-action {
-  grid-column: 2 / -3;
-  grid-row: 2 / 3;
-}
-
-.cover-photo-img-container {
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-  /* height: calc(100vh - 4.5rem); */
-}
-
 main {
   grid-column: 2 / 3;
-  grid-row: 4 / 5;
+  grid-row: 2 / 3;
+  justify-self: center;
 }
 
 footer {
   grid-column: 2 / 3;
-  grid-row: 5 / 6;
+  grid-row: 3 / 4;
 }
 
 .flexy {
@@ -93,15 +119,14 @@ header .nav-items li a:hover {
 }
 
 /* CALL TO ACTION */
-
-/* HERO STYLING */
-.cover-photo-img-container {
-  align-self: end;
-  height: 100vh;
+.call-to-action {
+  height: calc(100vh - 5rem);
+  background-image: url(../images/olive-oil-cover-photo.png);
+  background-position: center bottom;
 }
-.cover-photo-img-container .cover-img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  
+
+.call-to-action .call-to-action-title,
+.call-to-action .call-to-action-subtitle
+ {
+  text-align: center;
 }
