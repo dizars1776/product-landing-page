@@ -170,6 +170,7 @@ header .nav-items li a:hover {
   padding: .17em 1em;
   line-height: 2em;
   margin-left: -2px;
+  transition: .2s;
 }
 
 .call-to-action .form-container #submit:hover {
