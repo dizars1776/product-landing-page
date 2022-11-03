@@ -129,8 +129,26 @@ header .nav-items li a:hover {
   height: calc(100vh - 5rem);
   width: calc(100vw - 10rem);
   padding-top: 2em;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   letter-spacing: .15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.call-to-action h2 {
+  font-size: 4.5em;
+}
+
+.call-to-action h3 {
+  font-size: 3.1em;
+}
+
+.call-to-action .call-to-action-image .bar-soap-tools {
+  height: auto;
+  max-width: 1000px;
 }
 
 .call-to-action #form {
@@ -139,6 +157,7 @@ header .nav-items li a:hover {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top: 1.7em;
 }
 
 .call-to-action .call-to-action-title,
@@ -154,7 +173,8 @@ header .nav-items li a:hover {
   border-radius: .3em;
   padding: .17em;
   align-self: center;
-  margin-right: -2px;
+  margin-right: -0.16em;
+  font-size: 1.25em;
 }
 
 .call-to-action .form-container input#email:focus {
@@ -169,7 +189,8 @@ header .nav-items li a:hover {
   border-radius: .3em;
   padding: .17em 1em;
   line-height: 2em;
-  margin-left: -2px;
+  font-size: 1.25em;
+  margin-left: -0.16em;
   transition: .2s;
 }
 
