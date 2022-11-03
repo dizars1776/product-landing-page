@@ -1,3 +1,9 @@
+/* ROOT */
+:root {
+  --active-green: green;
+  --light-green: #55c155;
+}
+
 /* FONTS */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400');
 @import url('https://fonts.googleapis.com/css?family=Anton:400');
@@ -99,7 +105,7 @@ header .header-img {
 }
 
 header .header-text:hover {
-  color: green;
+  color: var(--active-green);
   text-shadow:  1px 1px 2px rgb(1 123 1 / .2 );
 }
 
@@ -111,17 +117,17 @@ header .nav-items li {
 }
 
 header .nav-items li:hover {
-  border-left: 1px solid green;
+  border-left: 1px solid var(--active-green);
 }
 
 header .nav-items li a:hover {
-  color: green;
+  color: var(--active-green);
 }
 
 /* CALL TO ACTION */
 .call-to-action {
   height: calc(100vh - 5rem);
-  width: 100%;
+  width: calc(100vw - 10rem);
   padding-top: 2em;
   border: 1px solid gray;
   letter-spacing: .15rem;
@@ -129,10 +135,45 @@ header .nav-items li a:hover {
 
 .call-to-action #form {
   text-align: center;
+  min-height: 4em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .call-to-action .call-to-action-title,
 .call-to-action .call-to-action-subtitle
  {
   text-align: center;
+}
+
+.call-to-action .form-container #email {
+  background-color: #f1f0f0;
+  line-height: 2em;
+  border: .17em solid var(--light-green);
+  border-radius: .3em;
+  padding: .17em;
+  align-self: center;
+  margin-right: -2px;
+}
+
+.call-to-action .form-container input#email:focus {
+  background-color: white;
+  outline: none;
+}
+
+.call-to-action .form-container #submit {
+  background-color: #f1f0f0;
+  align-self: center;
+  border: .17em solid var(--light-green);
+  border-radius: .3em;
+  padding: .17em 1em;
+  line-height: 2em;
+  margin-left: -2px;
+}
+
+.call-to-action .form-container #submit:hover {
+  background: linear-gradient(144deg, #4c7078, var(--active-green) 50%, #004e00);
+  color: #FFFFFF;
+  border-color: transparent;
 }
