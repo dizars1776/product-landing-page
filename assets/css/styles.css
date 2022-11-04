@@ -19,6 +19,9 @@
 html {
   box-sizing: border-box;
   font-size: 100%; /* 16px */
+  -webkit-scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 /* MAIN WRAPPER */
@@ -59,6 +62,11 @@ h4 {font-size: 1.44rem;}
 h5 {font-size: 1.2rem;}
 
 small, .text_small {font-size: 0.833rem;}
+
+main  > section,
+header, footer {
+  scroll-snap-align: start;
+}
 
 header {
   grid-column: 2 / 3;
