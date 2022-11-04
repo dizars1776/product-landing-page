@@ -283,7 +283,7 @@ section h2.content-heading {
   flex-flow: column;
 }
 
-#aside-header {
+.history #aside-header {
   transform: rotate(90deg);
   position: relative;
   top: 55%;
@@ -305,4 +305,44 @@ section h2.content-heading {
 
 .content-main .history-article{
   padding-block: 2em;
+}
+
+/* INFORAMTION */
+
+/* HISTORY */
+.information {
+  height: calc(100vh);
+  display: grid;
+  grid-template-columns: minmax(5rem, .3fr) 1fr;
+}
+
+.information #aside-header {
+  transform: rotate(-90deg);
+  position: relative;
+  top: 31.5%;
+  left: 40%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 3.488em;
+  letter-spacing: 0.1em;
+}
+
+.information .information-main-content {
+  padding-block: 1.5em;
+}
+
+.information .content-main {
+  padding-block: 3em 2.5em;
+}
+
+.information-article {
+  max-width: 65%;
+  margin-inline: auto;
+}
+
+.information .aside-bar-img {
+  background: url(../images/information-featured.png);
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
 }
