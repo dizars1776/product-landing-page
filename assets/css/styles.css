@@ -254,7 +254,7 @@ section h2.content-heading {
 
 .content-heading::before {
   position: absolute;
-  bottom: -115px;
+  bottom: -124px;
   left: 26.2%;
   display: block;
   width: 25%;
@@ -265,7 +265,7 @@ section h2.content-heading {
 
 .content-heading::after {
   position: absolute;
-  bottom: -129px;
+  bottom: -139px;
   left: 38%;
   padding: 0px 8px;
   content: "\2193";
