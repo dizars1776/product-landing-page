@@ -80,7 +80,7 @@ footer {
 
 .flexy {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row;
   justify-content: space-between;
   align-items: center;
   column-gap: 1em;
@@ -213,7 +213,12 @@ header .nav-items li a:hover {
 }
 
 .history .content-main {
-  padding-block: 2.5em;
+  padding-block: 3em 2.5em;
+}
+
+.history-article {
+  max-width: 65%;
+  margin-inline: auto;
 }
 
 .history .aside-bar-img {
@@ -225,16 +230,34 @@ header .nav-items li a:hover {
 
 
 /* ARTICLE GLOBAL RULES */
+
+section h2.content-heading {
+  font-size: 2.488em;
+}
+
 .content-heading {
   text-align: center;
+}
+
+.content-main {
+  text-align: justify;
+}
+
+/* .content-main .flexy-c {
+  align-items: center;
+} */
+
+.content-main article.flexy {
+  justify-content: center;
+  gap: 2em;
 }
 
 .content-heading::before {
   position: absolute;
   bottom: -115px;
-  left: 23.7%;
+  left: 26.2%;
   display: block;
-  width: 31%;
+  width: 25%;
   height: 2px;
   content: "";
   background-color: var(--history-highlight);
@@ -266,5 +289,20 @@ header .nav-items li a:hover {
   top: 55%;
   right: 40%;
   text-transform: capitalize;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 3.488em;
+  letter-spacing: 0.1em;
+}
+
+.content-main .history-article-img {
+  width: 180px;
+  height: 109px;
+}
+
+.history-article .history-article-paragraph{
+  
+}
+
+.content-main .history-article{
+  padding-block: 2em;
 }
