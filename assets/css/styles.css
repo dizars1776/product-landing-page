@@ -2,6 +2,7 @@
 :root {
   --active-green: green;
   --light-green: #55c155;
+  --history-highlight: #073a63;
 }
 
 /* FONTS */
@@ -201,3 +202,69 @@ header .nav-items li a:hover {
 }
 
 /* HISTORY */
+.history {
+  height: calc(100vh);
+  display: grid;
+  grid-template-columns: 1fr minmax(5rem, .3fr);
+}
+
+.history .history-main-content {
+  padding-block: 1.5em;
+}
+
+.history .content-main {
+  padding-block: 2.5em;
+}
+
+.history .aside-bar-img {
+  background: url(../images/history-featured.png);
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+/* ARTICLE GLOBAL RULES */
+.content-heading {
+  text-align: center;
+}
+
+.content-heading::before {
+  position: absolute;
+  bottom: -115px;
+  left: 23.7%;
+  display: block;
+  width: 31%;
+  height: 2px;
+  content: "";
+  background-color: var(--history-highlight);
+}
+
+.content-heading::after {
+  position: absolute;
+  bottom: -129px;
+  left: 38%;
+  padding: 0px 8px;
+  content: "\2193";
+  color: #073a63;
+  background-color: #fff;
+  font-size: 1.7rem;
+}
+
+.aside-bar-img {
+ 
+}
+
+.aside-bar {
+  display: flex;
+  flex-flow: column;
+}
+
+#aside-header {
+  transform: rotate(90deg);
+  position: relative;
+  top: 55%;
+  right: 40%;
+  text-transform: capitalize;
+  color: #fff;
+}
