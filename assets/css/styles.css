@@ -308,8 +308,6 @@ section h2.content-heading {
 }
 
 /* INFORAMTION */
-
-/* HISTORY */
 .information {
   height: calc(100vh);
   display: grid;
@@ -342,6 +340,44 @@ section h2.content-heading {
 
 .information .aside-bar-img {
   background: url(../images/information-featured.png);
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* PRICING */
+.pricing {
+  height: calc(100vh);
+  display: grid;
+  grid-template-columns: 1fr minmax(5rem, .3fr);
+}
+
+.pricing #aside-header {
+  transform: rotate(90deg);
+  position: relative;
+  top: 55%;
+  right: 40%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 3.488em;
+  letter-spacing: 0.1em;
+}
+
+.pricing .pricing-main-content {
+  padding-block: 1.5em;
+}
+
+.pricing .content-main {
+  padding-block: 3em 2.5em;
+}
+
+.pricing-article {
+  max-width: 65%;
+  margin-inline: auto;
+}
+
+.pricing .aside-bar-img {
+  background: url(../images/pricing-featured.png);
   height: 100%;
   background-size: cover;
   background-position: bottom;
