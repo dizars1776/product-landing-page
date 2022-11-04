@@ -17,6 +17,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 100%; /* 16px */
   -webkit-scroll-snap-type: y mandatory;
@@ -65,7 +66,7 @@ small, .text_small {font-size: 0.833rem;}
 
 main  > section,
 header, footer {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 header {
