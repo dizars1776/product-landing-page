@@ -245,6 +245,11 @@ section h2.content-heading {
   font-size: 2.488em;
 }
 
+mark {
+  padding: 0.2em;
+  background-color: #fcf8e3;
+}
+
 .content-heading {
   text-align: center;
   width: fit-content;
@@ -309,10 +314,6 @@ section h2.content-heading {
 .content-main .history-article-img {
   width: 180px;
   height: 109px;
-}
-
-.history-article .history-article-paragraph{
-  
 }
 
 .content-main .history-article{
