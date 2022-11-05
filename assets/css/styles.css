@@ -276,9 +276,9 @@ section h2.content-heading {
 }
 
 .content-heading::after {
-  position: absolute;
-  bottom: -139px;
-  left: 38%;
+  position: relative;
+  bottom: -33px;
+  right: 46.8%;
   padding: 0px 8px;
   content: "\2193";
   color: #073a63;
@@ -338,7 +338,12 @@ section h2.content-heading {
 }
 
 .information .content-heading::before {
- 
+  bottom: -65px;
+  left: -21%;
+}
+
+.information .content-heading::after {
+  right: 49.5%;
 }
 
 .information .information-main-content {
@@ -381,6 +386,14 @@ section h2.content-heading {
 
 .pricing .pricing-main-content {
   padding-block: 1.5em;
+}
+
+.pricing .content-heading::before {
+  left: -23.5%;
+}
+
+.pricing .content-heading::after {
+  right: 47.2%;
 }
 
 .pricing .content-main {
