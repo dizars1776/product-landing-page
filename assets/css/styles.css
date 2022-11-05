@@ -247,6 +247,8 @@ section h2.content-heading {
 
 .content-heading {
   text-align: center;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .content-main {
@@ -263,11 +265,11 @@ section h2.content-heading {
 }
 
 .content-heading::before {
-  position: absolute;
-  bottom: -124px;
-  left: 26.2%;
+  position: relative;
+  bottom: -65px;
+  left: -16.3%;
+  width: 130%;
   display: block;
-  width: 25%;
   height: 2px;
   content: "";
   background-color: var(--history-highlight);
@@ -333,6 +335,10 @@ section h2.content-heading {
   color: rgba(255, 255, 255, 0.8);
   font-size: 3.488em;
   letter-spacing: 0.1em;
+}
+
+.information .content-heading::before {
+ 
 }
 
 .information .information-main-content {
