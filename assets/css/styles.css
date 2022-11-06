@@ -64,7 +64,7 @@ h5 {font-size: 1.2rem;}
 
 small, .text_small {font-size: 0.833rem;}
 
-main  > section.scroll-here,
+main  > article.scroll-here,
 header, footer {
   scroll-snap-align: start;
   scroll-snap-stop: auto;
@@ -213,7 +213,7 @@ header .nav-items li a:hover {
 
 /* HISTORY */
 .history {
-  height: calc(100vh);
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr minmax(5rem, .3fr);
 }
@@ -240,7 +240,7 @@ header .nav-items li a:hover {
 
 
 /* ARTICLE GLOBAL RULES */
-section h2.content-heading {
+main h2.content-heading {
   font-size: 2.488em;
 }
 
@@ -286,11 +286,6 @@ mark {
   font-size: 1.7rem;
 }
 
-.aside-bar {
-  display: flex;
-  flex-flow: column;
-}
-
 .history #aside-header {
   transform: rotate(90deg);
   position: relative;
@@ -313,7 +308,7 @@ mark {
 
 /* INFORAMTION */
 .information {
-  height: calc(100vh);
+  height: 100vh;
   display: grid;
   grid-template-columns: minmax(5rem, .3fr) 1fr;
 }
@@ -348,8 +343,7 @@ mark {
 }
 
 .information-article {
-  max-width: 65%;
-  margin-inline: auto;
+  padding-inline: 4em;
 }
 
 .information-article-list {
@@ -399,7 +393,7 @@ mark {
 
 /* PRICING */
 .pricing {
-  height: calc(100vh);
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr minmax(5rem, .3fr);
 }
