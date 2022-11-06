@@ -91,7 +91,9 @@ footer {
 .flexy {
   display: flex;
   flex-flow: row;
+  height: 100%;
   justify-content: space-between;
+  align-content: center;
   align-items: center;
   column-gap: 1em;
 }
@@ -110,8 +112,7 @@ li a.nav-link {
 }
 
 header .header-img {
-  width: 100%;
-  height: 100%;
+  height: auto;
   max-width: 100px;
 }
 
@@ -138,7 +139,7 @@ header .nav-items li a:hover {
 /* CALL TO ACTION */
 .call-to-action {
   height: calc(100vh - 5rem);
-  width: calc(100vw - 10rem);
+  width: 100%;
   padding-top: 2em;
   letter-spacing: .15rem;
   display: flex;
