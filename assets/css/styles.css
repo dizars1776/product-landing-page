@@ -259,7 +259,7 @@ mark {
 }
 
 .content-main article.flexy {
-  justify-content: center;
+  justify-content: start;
   gap: 2em;
 }
 
