@@ -355,6 +355,10 @@ mark {
   padding-left: 3em;
 }
 
+.information-article-list {
+  padding-top: .3em;
+}
+
 .information-article-paragraph{
   padding-block: 1em;
 }
