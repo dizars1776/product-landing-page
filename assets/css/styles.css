@@ -450,7 +450,6 @@ mark {
 .list-wrapper-item:first-of-type {
   border-right: 1px solid gray;
   padding-right: 1em;
-  
 }
 
 .list-wrapper-item:last-of-type {
@@ -471,6 +470,11 @@ mark {
   height: 100%;
   background-size: cover;
   background-position: bottom;
+}
+
+.information .information-video-container #video {
+  aspect-ratio: 16 / 9;
+  width: 100%; 
 }
 
 /* PRICING */
