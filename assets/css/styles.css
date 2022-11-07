@@ -28,7 +28,7 @@ html {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 5.5rem 1fr;
   grid-template-areas: 
     ". header ."
     ". main ."
@@ -159,22 +159,27 @@ header .nav-items li a:hover {
 }
 
 /* CALL TO ACTION */
-
-.call-to-action .main-layout {
-
-}
-
 .call-to-action {
   width: 100%;
   /* padding-top: 1.5em; */
   letter-spacing: .15rem;
+}
+
+.call-to-action .call-to-action-flexy-wrapper {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
+  height: calc(100vh - 5.5rem);
+  /* justify-self: center; */
+  display: flex;
+  flex-flow: column ;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 
 .call-to-action .call-to-action-image {
-  justify-self: center;
+  
 }
 
 .call-to-action h2 {
@@ -240,7 +245,7 @@ header .nav-items li a:hover {
 }
 
 .call-to-action .call-to-action-scroll{
-  padding-top: 2em;
+  
 }
 
 /* HISTORY */
@@ -249,7 +254,7 @@ header .nav-items li a:hover {
 }
 
 .history .history-main-content {
-  height: 100vh;
+  height: calc(100vh - 5.5rem);
   grid-column: span 2;
   grid-row: 2 / 3;
   padding-block: 1.5em;
@@ -345,7 +350,7 @@ mark {
 }
 
 .information .information-main-content {
-  height: 100vh;
+  height: calc(100vh - 5.5rem);
   grid-column: span 2;
   grid-row: 2 / 3;
 }
@@ -434,7 +439,7 @@ mark {
 }
 
 .pricing-main-content {
-  height: 100vh;
+  height: calc(100vh - 5.5rem);
   grid-column: span 2;
   grid-row: 2 / 3;
 }
