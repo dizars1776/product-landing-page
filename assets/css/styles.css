@@ -28,11 +28,11 @@ html {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
-  grid-template-rows: auto 1fr 2rem;
+  grid-template-rows: auto 1fr;
   grid-template-areas: 
-  ". header ."
-  ". main ."
-  ". footer .";
+    ". header ."
+    ". main ."
+  ;
 }
 
 /* GRID STYLING && GLOBAL RULES */
@@ -80,17 +80,34 @@ main {
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory; 
   scroll-behavior: smooth;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */ 
 }
 
-main  > article.scroll-here,
-footer {
+/* Hide scrollbar for Chrome, Safari and Opera */
+main::-webkit-scrollbar {
+  display: none;
+}
+
+main  > .scroll-here
+{
   scroll-snap-align: start;
   scroll-snap-stop: auto;
 }
 
 footer {
-  grid-area: footer;
   background-color: #004e00; 
+}
+
+.main-layout {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(5rem, .3fr) 1fr minmax(5rem, .3fr);
+}
+
+.aside-bar {
+  grid-column: span 1;
 }
 
 .flexy {
@@ -101,13 +118,6 @@ footer {
   align-content: center;
   align-items: center;
   column-gap: 1em;
-}
-
-.flexy-c {
-  display: flex;
-  flex-flow: column;
-  align-content: center;
-  justify-content: center;
 }
 
 /* HEADER STYLING */
@@ -153,11 +163,6 @@ header .nav-items li a:hover {
   width: 100%;
   /* padding-top: 2em; */
   letter-spacing: .15rem;
-  /* display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center; */
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows: 1fr auto;
@@ -231,12 +236,11 @@ header .nav-items li a:hover {
 
 /* HISTORY */
 .history {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr minmax(5rem, .3fr);
+ 
 }
 
 .history .history-main-content {
+  grid-column: span 2;
   padding-block: 1.5em;
 }
 
@@ -325,10 +329,8 @@ mark {
 }
 
 /* INFORAMTION */
-.information {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: minmax(5rem, .3fr) 1fr;
+.information .information-main-content {
+  grid-column: span 2;
 }
 
 .information #aside-header {
@@ -410,10 +412,8 @@ mark {
 }
 
 /* PRICING */
-.pricing {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr minmax(5rem, .3fr);
+.pricing-main-content {
+  grid-column: span 2;
 }
 
 .pricing #aside-header {
