@@ -30,7 +30,7 @@ html {
   display: grid;
   width: 100%;
   grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
-  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-rows: 8rem 1fr 8rem;
 }
 
 /* GRID STYLING && GLOBAL RULES */
@@ -139,15 +139,22 @@ header .nav-items li a:hover {
 
 /* CALL TO ACTION */
 .call-to-action {
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 8rem);
   width: 100%;
   padding-top: 2em;
   letter-spacing: .15rem;
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-content: center;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: 1fr auto;
+}
+
+.call-to-action .call-to-action-image {
+  justify-self: center;
 }
 
 .call-to-action h2 {
