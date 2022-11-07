@@ -28,6 +28,7 @@ html {
 /* MAIN WRAPPER */
 .main-wrapper {
   display: grid;
+  width: 100%;
   grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
   grid-template-rows: 5rem 1fr 5rem;
 }
