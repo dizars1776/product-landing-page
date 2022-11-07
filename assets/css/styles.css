@@ -104,6 +104,7 @@ footer {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(5rem, .3fr) 1fr minmax(5rem, .3fr);
+  grid-template-rows: subgrid;
 }
 
 .aside-bar {
@@ -161,7 +162,7 @@ header .nav-items li a:hover {
 .call-to-action {
   height: 100vh;
   width: 100%;
-  /* padding-top: 2em; */
+  padding-top: 1.5em;
   letter-spacing: .15rem;
   display: grid;
   grid-template-columns: subgrid;
@@ -232,6 +233,10 @@ header .nav-items li a:hover {
   background: linear-gradient(144deg, #4c7078, var(--active-green) 50%, #004e00);
   color: #FFFFFF;
   border-color: transparent;
+}
+
+.call-to-action .call-to-action-scroll{
+  padding-top: 2em;
 }
 
 /* HISTORY */
