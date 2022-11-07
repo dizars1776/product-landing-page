@@ -251,8 +251,8 @@ header .nav-items li a:hover {
   bottom: 10px;
   width: 1.5em;
   height: 1.5em;
-  border-left: 1px solid var(--light-green);
-  border-bottom: 1px solid var(--light-green);
+  border-left: .2em solid var(--light-green);
+  border-bottom: .2em solid var(--light-green);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: scrolldown 1.5s infinite;
