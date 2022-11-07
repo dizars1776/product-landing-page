@@ -101,6 +101,7 @@ footer {
 }
 
 .main-layout {
+  height: calc(100vh - 5.5rem);
   display: grid;
   grid-template-columns: minmax(5rem, .3fr) 1fr minmax(5rem, .3fr);
   grid-template-rows: subgrid;
