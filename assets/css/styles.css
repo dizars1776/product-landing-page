@@ -243,9 +243,49 @@ header .nav-items li a:hover {
   color: #FFFFFF;
   border-color: transparent;
 }
+.call-to-action .call-to-action-scroller {
+  position: relative;
+}
+.call-to-action .call-to-action-scroller span{
+  position: absolute;
+  bottom: 10px;
+  width: 1.5em;
+  height: 1.5em;
+  border-left: 1px solid var(--light-green);
+  border-bottom: 1px solid var(--light-green);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: scrolldown 1.5s infinite;
+  animation: scrolldown 1.5s infinite;
+  box-sizing: border-box;
+}
+/* scroll animation */
+@-webkit-keyframes scrolldown {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
 
-.call-to-action .call-to-action-scroll{
-  
+@keyframes scrolldown {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 
 /* HISTORY */
