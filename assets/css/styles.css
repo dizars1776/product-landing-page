@@ -132,6 +132,10 @@ a.nav-link {
   text-decoration: none;
 }
 
+header #mobile-nav-bar {
+  display: none;
+}
+
 header .header-img {
   height: auto;
   max-width: 100px;
@@ -157,6 +161,66 @@ header .nav-items li:hover {
 
 header .nav-items li a:hover {
   color: var(--active-green);
+}
+
+/* HEADER MEDIA QUERIES */
+@media (450px <= width < 800px) {
+  header #nav-bar {
+    display: none;
+  }
+  header #mobile-nav-bar,
+  header #mobile-nav-bar input#ham-checkbox {
+    display: block;
+  }
+  header input#ham-checkbox {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+    display: block;
+  }
+  header .hamburger-lines {
+    width: 2rem;
+    height: 1.625rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  header .hamburger-lines .line {
+    display: block;
+    height: .25rem;
+    width: 100%;
+    border-radius: .8rem;
+    background: #0e2431;
+  }
+  header .hamburger-lines .line-1 {
+    transform-origin: top left;
+    transition: transform 0.4s ease-in-out;
+  }
+  header .hamburger-lines .line-2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  header .hamburger-lines .line-3 {
+    transform-origin: bottom left;
+    transition: transform 0.4s ease-in-out;
+  }
+  /* ham animation */
+  header #ham-checkbox:checked ~ .hamburger-lines .line-1 {
+    transform: rotate(45deg);
+  }
+  header #ham-checkbox:checked ~ .hamburger-lines .line-2 {
+    transform: scaleY(0);
+  }
+  header  #ham-checkbox:checked ~ .hamburger-lines .line-3 {
+    transform: rotate(-45deg);
+  }
+  header #ham-checkbox:checked {
+    
+  }
+
 }
 
 /* CALL TO ACTION */
@@ -526,4 +590,8 @@ mark {
   height: 100%;
   background-size: cover;
   background-position: bottom;
+}
+
+/* FOOTER */
+.footer {
 }
