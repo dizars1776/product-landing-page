@@ -164,7 +164,7 @@ header .nav-items li a:hover {
 }
 
 /* HEADER MEDIA QUERIES */
-@media (450px <= width < 800px) {
+@media (width < 800px) {
   header #nav-bar {
     display: none;
   }
@@ -217,10 +217,35 @@ header .nav-items li a:hover {
   header  #ham-checkbox:checked ~ .hamburger-lines .line-3 {
     transform: rotate(-45deg);
   }
-  header #ham-checkbox:checked {
-    
+}
+@media (width < 580px) {
+  header h1 {
+    font-size: 2.18rem;
   }
-
+  header .header-img {
+    max-width: 80px;
+  }
+  header .hamburger-lines {
+    width: 1.8rem;
+    height: 1.425rem;
+  }
+}
+@media (width < 475px) {
+  header h1 {
+    font-size: 1.58rem;
+  }
+  header .header-img {
+    max-width: 70px;
+  }
+  header .hamburger-lines {
+    width: 1.6rem;
+    height: 1.225rem;
+  }
+}
+@media (width < 300px) {
+  header .header-text {
+    display: none;
+  }
 }
 
 /* CALL TO ACTION */
