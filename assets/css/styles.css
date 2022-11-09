@@ -231,18 +231,21 @@ header .nav-items li a:hover {
   }
 }
 @media (width < 475px) {
+  .main-wrapper {
+    grid-template-columns: minmax(0.3rem, 1fr) minmax(min-content, 94rem) minmax(0.3rem, 1fr);
+  }
   header h1 {
-    font-size: 1.58rem;
+    font-size: 1.78rem;
   }
   header .header-img {
-    max-width: 70px;
+    max-width: 75px;
   }
   header .hamburger-lines {
-    width: 1.6rem;
-    height: 1.225rem;
+    width: 1.7rem;
+    height: 1.325rem;
   }
 }
-@media (width < 300px) {
+@media (width < 310px) {
   header .header-text {
     display: none;
   }
