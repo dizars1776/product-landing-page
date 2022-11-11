@@ -109,8 +109,8 @@ footer {
 }
 
 .aside-bar {
-  grid-column: span 1;
-  grid-row: 2 / 3;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .flexy {
@@ -387,7 +387,7 @@ header .nav-items li a:hover {
 .history .history-main-content {
   height: 100%;
   grid-column: span 2;
-  grid-row: 2 / 3;
+  grid-row: 1 / -1;
   padding-block: 1.5em;
 }
 
@@ -403,8 +403,6 @@ header .nav-items li a:hover {
 .history .aside-bar-img {
   background: url(../images/history-featured.png);
   height: 100%;
-  background-size: cover;
-  background-position: bottom;
 }
 
 
@@ -477,12 +475,11 @@ mark {
 
 /* INFORAMTION */
 .information {
-  grid-row: 2 / 3;
+  /* grid-row: 2 / 3; */
 }
 
 .information .information-main-content {
   grid-column: span 2;
-  grid-row: 2 / 3;
 }
 
 .information #aside-header {
@@ -506,7 +503,7 @@ mark {
 }
 
 .information .information-main-content {
-  padding-block: 1.5em;
+  /* padding-block: 1.5em; */
 }
 
 .information .content-main {
@@ -558,8 +555,6 @@ mark {
 .information .aside-bar-img {
   background: url(../images/information-featured.png);
   height: 100%;
-  background-size: cover;
-  background-position: bottom;
 }
 
 .information .information-video-container #video {
@@ -574,7 +569,7 @@ mark {
 
 .pricing-main-content {
   grid-column: span 2;
-  grid-row: 2 / 3;
+  /* grid-row: 2 / 3; */
 }
 
 .pricing #aside-header {
@@ -612,10 +607,9 @@ mark {
 .pricing .aside-bar-img {
   background: url(../images/pricing-featured.png);
   height: 100%;
-  background-size: cover;
-  background-position: bottom;
 }
 
 /* FOOTER */
 .footer {
+ 
 }
