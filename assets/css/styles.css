@@ -388,10 +388,10 @@ header .nav-items li:hover {
 }
 
 .history .history-main-content {
-  height: 100%;
+  height: fit-content;
   grid-column: span 2;
   grid-row: 1 / -1;
-  padding-block: 1.5em;
+  padding-top: 1.5em;
 }
 
 .history .content-main {
@@ -478,7 +478,7 @@ mark {
 
 /* INFORAMTION */
 .information {
-  /* grid-row: 2 / 3; */
+  
 }
 
 .information .information-main-content {
