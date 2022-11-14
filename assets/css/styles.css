@@ -304,11 +304,9 @@ header .nav-items li:hover {
   grid-column: 1 / -1;
   display: flex;
   flex-flow: column;
-  place-content: center;
+  justify-content: space-evenly;
   place-items: center;
 }
-
-.call-to-action .call-to-action-image {}
 
 .call-to-action h2 {
   font-size: 4.5em;
@@ -318,9 +316,12 @@ header .nav-items li:hover {
   font-size: 3.1em;
 }
 
+.call-to-action .call-to-action-image {
+  max-width: 1200px;
+}
+
 .call-to-action .call-to-action-image .bar-soap-tools {
-  height: auto;
-  max-width: 1000px;
+  max-width: 50vw;
 }
 
 .call-to-action #form {
@@ -377,16 +378,15 @@ header .nav-items li:hover {
 
 .call-to-action .call-to-action-scroller span {
   position: absolute;
-  bottom: 0.5rem;
-  width: 2em;
-  height: 2em;
+  bottom: 1.9rem;
+  width: 1.8em;
+  height: 1.8em;
   border-left: .4rem solid var(--light-green);
   border-bottom: .4rem solid var(--light-green);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: scrolldown 1.5s infinite;
   animation: scrolldown 1.5s infinite;
-  box-sizing: border-box;
 }
 
 /* scroll animation */
@@ -422,6 +422,57 @@ header .nav-items li:hover {
   }
 }
 
+/* CALL TO ACTION - MEDIA QUERIES */
+@media (width < 800px) {
+
+  .call-to-action .call-to-action-image .bar-soap-tools {
+    max-width: 85vw;
+  }
+
+  .call-to-action .call-to-action-scroller span{
+    bottom: 0.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .call-to-action {
+    font-size: 0.9em;
+  }
+
+}
+
+@media (width < 580px) {
+
+  .call-to-action .call-to-action-image .bar-soap-tools {
+    max-width: 95vw;
+  }
+
+  .call-to-action .call-to-action-scroller span{
+    bottom: 0.8rem;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .call-to-action {
+    font-size: 0.8em;
+  }
+
+  .call-to-action h2 {
+    font-size: 4.1em;
+  }
+
+  .call-to-action h3 {
+    font-size: 3em;
+  }
+}
+
+@media (width < 475px) {
+
+  .call-to-action {
+    font-size: 0.63em;
+  }
+}
+
 /* HISTORY */
 .history {}
 
@@ -446,6 +497,22 @@ header .nav-items li:hover {
   height: 100%;
 }
 
+/* HISTORY MEDIA QUERIES */
+@media (width < 800px) {
+
+}
+
+@media (width < 580px) {
+
+}
+
+@media (width < 475px) {
+
+}
+
+@media (width < 310px) {
+
+}
 
 /* ARTICLE GLOBAL RULES */
 main h2.content-heading {
