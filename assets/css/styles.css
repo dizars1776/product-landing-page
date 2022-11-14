@@ -123,10 +123,12 @@ main>.scroll-here {
   height: 100%;
   display: grid;
   grid-template-columns: minmax(5rem, .3fr) minmax(0, 1fr) minmax(5rem, .3fr);
-  grid-template-rows: minmax(0, 1fr);
+  grid-template-rows: 1fr;
+  overflow-y: scroll;
 }
 
 .aside-bar {
+  height: 100%;
   background-size: cover;
   background-position: bottom;
 }
